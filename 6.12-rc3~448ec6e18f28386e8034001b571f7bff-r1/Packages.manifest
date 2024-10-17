@@ -93,7 +93,7 @@ Architecture: aarch64_generic
 Installed-Size: 266240
 Filename: base-files_1~a475171_aarch64_generic.ipk
 Size: 52352
-SHA256sum: b8f3352c72224d85aa2b0dece12f906081e7cee881267d68c032b8140f7e22b6
+SHA256sum: 05b61db756ee4e09f174e46f25130255aa28b9655a71e0a056c69404052bdab6
 Description:  This package contains a base filesystem and system scripts for OpenWrt.
 
 Package: block-mount
@@ -1918,6 +1918,29 @@ Filename: kmod-backlight_6.12-rc3-r1_aarch64_generic.ipk
 Size: 941
 SHA256sum: 6d950d6d22e5c58c7a616aa0c9ab002286adc4819f9e62e4f738079c40afc6b2
 Description:  Kernel module for Backlight support.
+
+Package: kmod-batman-adv
+Version: 6.12-rc3.2024.3-r2
+Depends: kernel (=6.12-rc3~448ec6e18f28386e8034001b571f7bff-r1), kmod-lib-crc16, kmod-lib-crc32c, kmod-cfg80211, batctl
+Source: feeds/routing/batman-adv
+SourceName: batman-adv
+License: GPL-2.0-only MIT
+LicenseFiles: LICENSES/preferred/GPL-2.0 LICENSES/preferred/MIT
+Section: kernel
+SourceDateEpoch: 1729065691
+URL: https://www.open-mesh.org/
+Maintainer: Simon Wunderlich <sw@simonwunderlich.de>
+Architecture: aarch64_generic
+Installed-Size: 665600
+Filename: kmod-batman-adv_6.12-rc3.2024.3-r2_aarch64_generic.ipk
+Size: 169963
+SHA256sum: 2c5bae23cadadfa7a06a6b54f1a1ce5a8eddc706c511cf4f7ce87fc2b04830a6
+Description:  B.A.T.M.A.N. (better approach to mobile ad-hoc networking) is
+ a routing protocol for multi-hop ad-hoc mesh networks. The
+ networks may be wired or wireless. See
+ https://www.open-mesh.org/ for more information and user space
+ tools. This package builds version 2024.3 of the kernel
+ module.
 
 Package: kmod-bcma
 Version: 6.12-rc3-r1
